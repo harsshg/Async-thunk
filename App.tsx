@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Provider, useDispatch, useSelector } from 'react-redux';
-import { store, AppDispatch, RootState } from './android/app/src/REDUX/store';
-import { fetchProducts, selectAllProducts } from './android/app/src/features/products';
+import { store, AppDispatch, RootState } from './app/REDUX/store';
+import { fetchProducts, selectAllProducts } from './app/features/products';
 import { FlatList, Text, View, ActivityIndicator, Image } from 'react-native';
 
 type Product = {
