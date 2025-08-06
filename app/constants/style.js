@@ -1,5 +1,11 @@
 import { StyleSheet } from 'react-native';
 
+import {
+  responsiveHeight as hp,
+  responsiveWidth as wp,
+  responsiveFontSize as fp
+} from "react-native-responsive-dimensions";
+
 const styles = StyleSheet.create({
   container: {
     padding: 0,
@@ -12,15 +18,18 @@ const styles = StyleSheet.create({
   },
 
   header: {
+
     color: 'white',
-    fontSize: 25,
+    fontSize: fp(4),
     fontWeight: 500,
+    marginBottom:15,
+  
   },
 
   pageview1: {
     margin: 8,
-    height: 400,
-    width: 400,
+    height: hp(38),
+    width: wp(88),
     backgroundColor: 'rgb(255, 255, 255)',
     alignItems: 'center',
     padding: 10,
@@ -30,27 +39,27 @@ const styles = StyleSheet.create({
   },
 
   img: {
-    width: 200,
-    height: 200,
+    width: wp(40),
+    height: hp(20),
     marginRight: 10,
   },
 
   prdctdetails: {
-    marginTop: 10,
+    marginTop: hp(1),
     backgroundColor: 'rgba(0, 0, 0, 0.08)',
-    padding: 10,
-    borderRadius: 15,
+    padding: hp(1),
+    borderRadius: hp(2),
   },
   txtbx: {
     color: 'rgba(0, 0, 0, 0.7)',
-    fontSize: 20,
+    fontSize: fp(2.01),
     fontWeight: '500',
   },
 
   txtbx2: {
     color: 'red',
     fontWeight: '500',
-    fontSize: 20,
+    fontSize: fp(2),
   },
 });
 export default styles;
