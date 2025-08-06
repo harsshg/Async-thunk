@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import { Provider, useDispatch, useSelector } from 'react-redux';
-import { store, AppDispatch, RootState } from './app/REDUX/store';
-import { fetchProducts, selectAllProducts } from './app/REDUX/slices/products';
+import { store, AppDispatch, RootState } from './app/redux/store';
+import { fetchProducts, selectAllProducts } from './app/redux/slices/products';
 import { FlatList, Text, View, ActivityIndicator, Image } from 'react-native';
 import { ProductList } from './app/components/index';
 import { Header } from './app/components/index';
+import {styles} from './app/constants/index'
 
 
 
 const App = () => (
   <Provider store={store}>
-    <View style={{padding:0,backgroundColor:'rgb(0, 0, 0)'}} >
-     
-      <View style={{marginTop:50,alignItems:'center'}}>
+    <View style={styles.container} >
+      <View style={styles.container2}>
         <Header/>
     <ProductList />
     </View>

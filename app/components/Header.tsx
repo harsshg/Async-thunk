@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import { styles } from '../constants'
 
 const Header = () => {
   return (
     <View>
-      <Text style={{color:'white',fontSize:25,fontWeight:500}}>Ecommerce plateform</Text>
+      <Text style={styles.header}>Ecommerce plateform</Text>
     </View>
   )
 }
