@@ -3,8 +3,7 @@ import { Provider, useDispatch, useSelector } from 'react-redux';
 import { store, AppDispatch, RootState } from './app/redux/store';
 import { fetchProducts, selectAllProducts } from './app/redux/slices/products';
 import { FlatList, Text, View, ActivityIndicator, Image } from 'react-native';
-import { ProductList } from './app/components/index';
-import { Header } from './app/components/index';
+import { ProductList ,Header } from './app/components/index';
 import {styles} from './app/constants/index'
 
 
