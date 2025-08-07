@@ -1,1 +1,5 @@
-export {default as styles} from './style';
+import styles from './style';
+
+export {
+styles
+}
