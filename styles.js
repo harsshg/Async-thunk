@@ -8,10 +8,11 @@ import babelConfig from "./babel.config";
 
 let styles = StyleSheet.create({
   container: {
+    marginTop:50,
     height:'100%',
     width:'100%',
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'flex-start'
 
   },
   view1:{
